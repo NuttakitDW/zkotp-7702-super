@@ -14,7 +14,7 @@ update:
 	git submodule update --remote --merge
 
 build-circuit:
-	cd $(CIRCUIT_DIR) && cargo build --release --target riscv32im-risc0-zkvm-elf
+	cd $(CIRCUIT_DIR) && cargo build --release
 
 copy-elf:
 	cp $(CIRCUIT_DIR)/$(ELF_PATH) $(ELF_DEST)
