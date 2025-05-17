@@ -13,3 +13,15 @@
 [submodule "zkotp-sdk"]
 	path = zkotp-sdk
 	url = https://github.com/NuttakitDW/zkotp-sdk
+[submodule "zkotp-contracts"]
+	path = zkotp-contracts
+	url = https://github.com/NuttakitDW/zkotp-contracts
+[submodule "zkotp-circuit"]
+	path = zkotp-circuit
+	url = https://github.com/NuttakitDW/zkotp-circuit
+[submodule "zkotp-frontend"]
+	path = zkotp-frontend
+	url = https://github.com/NuttakitDW/zkotp-frontend
+[submodule "zkotp-api"]
+	path = zkotp-api
+	url = https://github.com/NuttakitDW/zkotp-api
