@@ -21,7 +21,7 @@
 
 ```bash
 # clone everything, submodules included
-$ git clone --recursive https://github.com/yourOrg/zkotp-7702-super.git
+$ git clone --recursive https://github.com/NuttakitDW/zkotp-7702-super.git
 $ cd zkotp-7702-super
 
 # install workspace deps & auto‑build circuit WASM
