@@ -20,8 +20,5 @@ copy-elf:
 	mkdir -p $(dir $(ELF_DEST))
 	cp $(CIRCUIT_DIR)/$(ELF_PATH) $(ELF_DEST)
 
-run-api:
-	cd $(API_DIR) && cargo run
-
-test:
-	cd $(CIRCUIT_DIR) && cargo test
+test-guest:
+	cd $(CIRCUIT_DIR)/methods/guest && cargo test
