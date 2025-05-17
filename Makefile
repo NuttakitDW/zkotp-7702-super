@@ -16,9 +16,18 @@ update:
 build-circuit:
 	cd $(CIRCUIT_DIR) && cargo build --release
 
+build-api:
+	cd $(API_DIR) && cargo build
+
 copy-elf:
 	mkdir -p $(dir $(ELF_DEST))
 	cp $(CIRCUIT_DIR)/$(ELF_PATH) $(ELF_DEST)
 
 test-guest:
 	cd $(CIRCUIT_DIR)/methods/guest && cargo test
+
+run-api:
+	cd $(API_DIR) && cargo run
+
+test-api:
+	cd $(API_DIR) && cargo test
