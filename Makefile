@@ -26,6 +26,9 @@ copy-elf:
 test-guest:
 	cd $(CIRCUIT_DIR)/methods/guest && cargo test
 
+run-circuit:
+	cd $(CIRCUIT_DIR) && cargo run --release
+
 run-api:
 	cd $(API_DIR) && cargo run
 
